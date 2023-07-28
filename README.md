@@ -2,7 +2,7 @@
 
 ### Initialize Repositry to Local
 
-git clone https://github.com/HxHBubble/hxh-official.git
+`git clone https://github.com/HxHBubble/hxh-official.git`
 
 ## To Access Client Side 
 ```
@@ -18,5 +18,5 @@ In your command promt
 2. npm install
 3. npm start
 
-[x] Install Sql for Database Access
+-[x] Install Sql for Database Access
 ```
