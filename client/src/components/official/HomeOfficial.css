@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lobster", Lobster;
+}
+
+.official-main {
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    object-fit: cover;
+}
+
+.first-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.75em;
+}
+
+#annouance>h1 {
+    font-size: 2.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    text-shadow: 0.2em black;
+    background-image: linear-gradient(-225deg,
+            #d9f16d 0%,
+            #8028de 29%,
+            #d02b62 67%,
+            #f2f24b 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite ;
+    font-size: 3rem;
+    transition: .5s;
+}
+
+.banner {
+    margin: 1%;
+    height: 80%;
+    width: auto;
+    box-sizing: border-box;
+    border: 5px white solid;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+.image-games>img {
+    width: 60px;
+    height: 60px;
+    margin: 0.75rem;
+}
+
+#annouance {
+    background-image: url(../../static/ancment-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#community {
+    background-image: url(../../static/gamingCom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#teams {
+    background-image: url(../../static/teams-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#aboutus {
+    background-image: url(../../static/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutlogo {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    animation: rotate 24s ease-in-out infinite;
+}
+
+.titleabout {
+    animation: glow 2s ease-in-out infinite;
+    text-shadow: 2px 2px 3px black, 0 0 1.5em yellow, 0 0 0.4em gold;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 2px black, 0 0 1em yellow, 0 0 0.6em gold;
+    }
+
+    50% {
+        text-shadow: 0px 0px 1px black, 0 0 0.5em yellow, 0 0 0.2em gold;
+    }
+
+    100% {
+        text-shadow: 0px 0px 2px black, 0 0 1em yellow, 0 0 0.6em gold;
+    }
+}
+
+@keyframes glowbox {
+    0% {
+        box-shadow: 0px 0px 2px black, 0 0 1em yellow, 0 0 0.6em gold;
+    }
+
+    50% {
+        box-shadow: 0px 0px 1px black, 0 0 0.5em yellow, 0 0 0.2em gold;
+    }
+
+    100% {
+        box-shadow: 0px 0px 2px black, 0 0 1em yellow, 0 0 0.6em gold;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 360deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+
+    75% {
+        rotate: -360deg
+    }
+
+    100% {
+        rotate: 0deg
+    }
+}
+
+
+.pagelink {
+    position: relative;
+}
+
+.pagelink:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: pink;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.pagelink:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.titleborder {
+    color: rgb(255, 254, 254);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 13px;
+}
+
+.titleborder:after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    height: 40px;
+    height: 7px;
+    background: pink;
+    transition: all 0.5s linear;
+    width: 0;
+    bottom: 0;
+}
+
+.titleborder:hover:after {
+    width: 400px;
+    margin-left: -200px;
+}

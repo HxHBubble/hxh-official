@@ -1,0 +1,102 @@
+
+html, body, .home-bg, #root {
+  height: 100%;
+  margin: 0;
+  color: white;
+  text-align: center  ;
+  background-color: #f2df84;
+}
+.hxhlogo {
+  border-radius: 50%;
+  color: #666;
+  transition: .5s;
+}
+.hxhlogo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.hxhlogo:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ffee10;
+}
+
+.hxhlogo:hover {
+  color: #ffee10;
+  box-shadow: 0 0 10px #ffee10;
+  text-shadow: 0 0 10px #ffee10;
+}
+
+.hxhtitle{
+  flex-grow: 1;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 1.75rem;  
+  transition: .5s;
+}
+
+.hxhtitle:hover {
+  transform: scale(1.25); 
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.home-bg {
+  background-image: url(./static/home-bg.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-size: cover;
+/* Full height */
+height: auto; 
+
+min-height: 100vh;}
+
+.newreg-bg  {
+  background-image: url(./static/newreg-bg.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-size: cover;
+/* Full height */
+height: auto; 
+
+min-height: 100vh; }
+
+.teamdetails-bg  {
+  background-image: url(./static/teamdetails-bg.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-size: cover;
+/* Full height */
+height: auto; 
+
+min-height: 100vh; }
