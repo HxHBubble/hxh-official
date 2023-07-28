@@ -4,14 +4,15 @@
 
 ```git clone https://github.com/HxHBubble/hxh-official.git```
 ___
----
+
 ## To Access Client Side 
-``
+```
  In your command prompt
 1. Navigate to client folder
 2. npm install
 3. npm start  
-``
+```
+---
 ## To Access Server Side
 ```
 In your command promt
