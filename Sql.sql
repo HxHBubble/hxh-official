@@ -1,0 +1,27 @@
+CREATE DATABASE `hxhofficial`;
+
+TeamsCREATE TABLE `Teams` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`teamName` VARCHAR(100) DEFAULT '',
+	`discordId` VARCHAR(100) DEFAULT NULL,
+	`player1` VARCHAR(100) NOT NULL,
+	`player2` VARCHAR(100) NOT NULL,
+	`player3` VARCHAR(100) NOT NULL,
+	`player4` VARCHAR(100) NOT NULL,
+	`player5` VARCHAR(100) NOT NULL,
+	`teamRank` VARCHAR(100) DEFAULT '',
+	`createdAtDate` VARCHAR(100) DEFAULT '',
+	UNIQUE KEY `id` (`id`) USING HASH,
+	PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `Users` (
+	`UserID` INT(100) NOT NULL AUTO_INCREMENT,
+	`UserName` VARCHAR(100) NOT NULL,
+	`Password` VARCHAR(500) NOT NULL,
+	`MobileNo` INT(15),
+	`UserNickName` VARCHAR(100) DEFAULT '',
+	`CreatedAt` VARCHAR(100) NOT NULL,
+	UNIQUE KEY `UserID` (`UserID`) USING HASH,
+	PRIMARY KEY (`UserID`)
+);
